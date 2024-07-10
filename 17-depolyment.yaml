@@ -7,24 +7,24 @@ metadata:
     app: nginx
     purpose: depolyment
     tier: web
-  spec:
-    replicas: 3
-    selector:
-      matchLabels:
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nginx
+      tier: web
+      project: test-project1
+        # pod defination
+  template:
+    metadata:
+      labels:
         app: nginx
         tier: web
         project: test-project1
-        # pod defination
-    template:
-      metadata:
-        labels:
-          app: nginx
-          tier: web
-          project: test-project1
-          extra-Key: extra-value
-      spec:
-        containers:
-        - name: nginx
-          image: nginx    
+        extra-Key: extra-value
+    spec:
+      containers:
+      - name: nginx
+        image: nginx    
 
 
