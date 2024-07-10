@@ -1,0 +1,26 @@
+kind: Depolyment
+apiVersion: app/v1
+metadata:
+  name: nginx
+  #these labels are depolyment related labels
+  labels:
+    app: nginx
+    purpose: depolyment
+    tier: web
+  spec:
+    replicas: 3
+    selector:
+      matchLabels:
+        app: nginx
+        tier: web
+        project: test-project1
+        # pod defination
+    template:
+      metadata:
+        labels:
+          app: nginx
+          tier: web
+          project: test-project1
+          extra-Key: extra-value
+
+
