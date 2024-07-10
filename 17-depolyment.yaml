@@ -1,4 +1,4 @@
-Kind: Depolyment
+kind: Depolyment
 apiVersion: app/v1
 metadata:
   name: nginx
