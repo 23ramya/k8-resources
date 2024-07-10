@@ -22,5 +22,9 @@ metadata:
           tier: web
           project: test-project1
           extra-Key: extra-value
+      spec:
+        containers:
+        - name: nginx
+          image: nginx    
 
 
