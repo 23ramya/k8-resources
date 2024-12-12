@@ -11,7 +11,7 @@ spec:
     imagePullPolicy: Always # keep this as always
   tolerations:
   - key: "project"
-    operator: "Exist"
+    operator: "Exists"
     value: "expense"
     effect: "NoSchedule"
   - key: "project"
