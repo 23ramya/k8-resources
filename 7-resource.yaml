@@ -11,7 +11,7 @@ spec:
       requests: 
         cpu: "100m"
         memory: "128Mi"
-        #limits should be atleast or more than request i.e hard limits
+        #limits should be atleast same or more than request i.e hard limits
       limits:
         cpu: "100m"
         memory: "128Mi"
